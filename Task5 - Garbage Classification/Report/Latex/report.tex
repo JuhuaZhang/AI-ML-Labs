@@ -1,0 +1,395 @@
+\documentclass[chinese]{cccconf}
+\usepackage[comma,numbers,square,sort&compress]{natbib}
+\usepackage{epstopdf}
+\usepackage{ccmap}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{
+  frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\footnotesize\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4,
+}
+
+\lstdefinestyle{Python}{
+    language        =   Python,
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{blue},
+    keywordstyle    =   [2] \color{teal},
+    stringstyle     =   \color{magenta},
+    commentstyle    =   \color{red}\ttfamily,
+    breaklines      =   true,
+    columns         =   fixed,
+    basewidth       =   0.5em,
+}
+
+\begin{document}
+
+\title{基于神经网络的垃圾分类}
+
+\author{张嘉浩\aref{1}, 代洋飞\aref{2}, 朱博医\aref{3}}
+
+\affiliation[1]{浙江大学电气工程学院，自动化（电气学院）1903，3190103683}
+\affiliation[2]{浙江大学机械工程学院，机械工程1902，3190105373}
+\affiliation[3]{浙江大学机械工程学院，机械工程1906，3190100772}
+
+\maketitle
+
+\begin{abstract}
+  随着社会的飞速发展，生活中产生的消耗废品日益剧增，如何更好地分类与回收这些“垃圾”已经成为了急需解决的问题。为了我国能够更好更快的建立健全城市垃圾分类处理制度以及方便人们对于垃圾分类有更全面的认识，本文利用人工智能技术，设计了基于深度学习的垃圾分类模型，包括了全连接神经网络，卷积神经网络以及MobileNetV2神经网络，对包含2700多张图片的数据集进行分类训练。训练结果表明，在全连接神经网络，卷积神经网络和MobileNetV2神经网络中，MoblieNetV2网络的效果最好，准确率可以到达93.97\%，实现了较好的分类效果。
+\end{abstract}
+
+\keywords{垃圾分类,卷积神经网络,MobileNetV2}
+
+\title{Garbage Classification On Neural Network}
+\author{Jiahao Zhang\aref{4}, Yangfei Dai\aref{5}, Boyi Zhu\aref{5}}
+
+\affiliation[4]{Automation, College of Electrical Engineering, Zhejiang University}
+\affiliation[5]{Mechanical Engineering, College of Mechanical Engineering, Zhejiang University}
+
+\maketitle
+
+\begin{abstract}
+With the rapid development of society, the consumable waste generated in life is increasing rapidly. How to better classify and recycle these "garbage" has become a problem that needs to be solved urgently. In order for my country to better and faster establish and improve the urban waste classification and treatment system and facilitate people to have a more comprehensive understanding of waste classification, this article uses artificial intelligence technology to design a waste classification model based on deep learning, including a fully connected neural network. Convolutional neural network and MobileNetV2 neural network classify and train a data set containing more than 2700 pictures. The training results show that among the fully connected neural network, convolutional neural network and MobileNetV2 neural network, the MoblieNetV2 network has the best effect, with an accuracy rate of 93.97\%, which achieves a better classification effect.
+\end{abstract}
+
+\keywords{Garbage Sorting, Convolutional Neural Network, MobileNetV2}
+
+\footnotetext{人工智能与机器学习大作业}
+
+\section{引言}
+
+\subsection{选题背景}
+
+垃圾分类，一般是指按一定规定或标准将垃圾分类储存、分类投放和分类搬运，从而转变成公共资源的一系列活动的总称。自今年7月1日起，上海市将正式实施《上海市生活垃圾管理条例》。垃圾分类，看似是微不足道的“小事”，实则关系到13亿多人生活环境的改善，理应大力提倡。
+
+\subsection{研究意义}
+
+分类的目的是提高垃圾的资源价值和经济价值，力争物尽其用。进行垃圾分类收集可以减少垃圾处理量和处理设备，降低处理成本，减少土地资源的消耗，具有社会、经济、生态等几方面的效益。生活垃圾由于种类繁多，具体分类缺乏统一标准，大多人在实际操作时会“选择困难”，基于深度学习技术建立准确的分类模型，利用技术手段改善人居环境。
+
+\subsection{相关文献综述}
+
+早期, 学者们只能借助经典的图像分类算法完成垃圾图像分类任务, 这要通过手动提取的图像特征并结合相应的分类器完成. 吴健等利用颜色和纹理特征, 初步完成了废物垃圾识别. 由于不同数据集的图像背景、尺寸、质量不尽相同, 传统算法需要根据相应数据人工提取不同的特征, 算法的鲁棒性较差, 并且处理方式复杂, 所需时间较长, 无法达到实时的效果. 随着卷积神经网络(Convolution Neural Network, CNN) 的飞速发展, 深度学习广泛应用于图像识别领域. 作为数据驱动的算法, CNN 具有强大的特征拟合能力, 可以有效、自动地提取图像特征, 并具有较快的运行速度. 2012 年, AlexNet取得了ImageNet图像分类竞赛的冠军, 标志着深度学习的崛起. 随后几年, GoogleNet、VGGNet、ResNet等算法提升了图像分类的精度, 并成功应用于人脸识别、车辆检测等多个领域. 垃圾图像分类, 在深度学习算法的帮助下同样取得了较大的突破. 斯坦福大学的Yang等建立了TrashNet Dataset公开数据集, 包含6个类别, 共计2527张图片. Ozkaya等通过对比不同CNN网络的分类能力, 搭建神经网络(本文称之为TrashNet)并进行参数微调, 在数据集TrashNet Dataset上取得了97.86\%的准确率, 是目前这一数据集上最佳分类网络. 在非公开数据集方面, Mittal等自制了2561 张的垃圾图片数据集GINI, 使用GarbNet 模型, 得到了87.69\%的准确率. 国内方面, 郑海龙等用SVM 方法进行了建筑垃圾分类方面的研究. 向伟等使用分类网络CaffeNet, 调整卷积核尺寸和网络深度, 使其适用于水面垃圾分类, 在其自制的1500张图片数据集上取得了95.75\% 的识别率. 2019年, 华为举办垃圾图像分类竞赛, 构建了样本容量为一万余张的数据集, 进一步促进了该领域的发展。
+
+\section{算法描述与求解结果}
+
+\subsection{算法描述与求解结果}
+
+小组需要以 MobileNetV2+ 垃圾分类数据集为例，使用深度学习框架（如Pytorch/Tensorflow）在CPU/GPU 平台上进行训练，实现对26种垃圾进行分类。或者自己搭建神经网络，实现垃圾分类。
+
+\subsection{训练样本}
+
+训练样本由mo平台提供，图片分为干垃圾，可回收物，湿垃圾和有害垃圾四个大类共26 种物品共2375 张图片组成，在训练过程中使用以下函数将训练样本划分为训练集和测试集两大类，供后续的训练和验证所用：
+
+\lstinputlisting[style = Python]{./src/1.py}
+
+\subsection{搭建过程}
+对于垃圾分类问题，我们小组主要进行了三轮模型的调试，具体过程如下：
+\subsubsection{第一轮尝试：DNN}
+我们首先搭建了简单的一个三层全连接神经网络（DNN），我们首先将输入的图片展开为一个一维向量：
+\lstinputlisting[style = Python]{./src/2.py}
+
+然后将一维向量输入到搭建完的神经网络中，每一层网络由BN层，激活层组成，第一层网络的结构如下：
+
+\lstinputlisting[style = Python]{./src/3.py}
+
+
+在三层网络中，我们分别采用了 $sigmoid$, $relu$ 和 $softmax$ 激活函数。通过对该神经网络进行长达一个小时的训练，但是由于图像信息很大，而全连接层并不适合，测试集准确度很低，最高仅达到0.3左右。
+
+\subsubsection{第二轮尝试：CNN}
+卷积神经网络通常被用于处理多阵列形式的数据，例如有三个二维阵列组成的RGB图像，每个二位整列包含的是三个彩色通道的像素强度。该类网络的背后有四个关键思想，它们利用了自然信号的特性，分别是：本地连接、共享权重、池化和多层的使用。
+
+由于CNN的特征检测层通过训练数据进行学习，所以在使用CNN时，避免了显式的特征抽取，而隐式地从训练数据中进行学习；再者由于同一特征映射面上的神经元权值相同，所以网络可以并行学习，这也是卷积网络相对于神经元彼此相连网络的一大优势。
+
+\paragraph{网络结构}
+
+该神经网络由 数据输入层(Input layer)，卷积计算层(CONV layer)，ReLU激励层(ReLU layer)，池化层(Pooling layer)，全连接层(FC layer)组成，其结构入下图所示：
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=\hsize]{./fig/Cov.png}
+  \caption{卷积神经网络结构}
+  \label{fig1}
+\end{figure}
+
+
+数据输入层对图像进行去均值、归一化等预处理；特征提取部分主要由4层卷积与池化层组成，卷积、池化的操作将一张图片的维度进行了压缩，提取了图像的特征并能有效的防止过拟合；全连接层通常在卷积神经网络尾部负责网络与输出的联接。从图示上我们不难看出卷积网络的精髓就是适合处理结构化数据，而该数据在跨区域上依然有关联。
+
+我们自己搭建了一个五层的卷积神经网络（CNN），每一层神经网络由卷积层，BN（归一化）层，激活层与最大池化层组成，以第一层结构为例：
+\lstinputlisting[style = Python]{./src/4.py}
+
+\paragraph{图片变换}
+我们对图片进行了一系列变换，如旋转、翻转、灰度化以增强稳定度：
+\lstinputlisting[style = Python]{./src/5.py}
+
+\paragraph{调整超参}
+在训练过程中主要调整以下参数：
+\lstinputlisting[style = Python]{./src/6.py}
+
+\paragraph{训练过程}
+对于该神经网络，设置 epoch = 50 进行训练，得到训练的损失曲线如下图所示：
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=\hsize]{./fig/2.png}
+  \caption{卷积神经网络训练结果}
+  \label{fig1}
+\end{figure}
+虽然训练集的损失值随着epoch的增加而接近于0，但是神经网络在测试集的表现程度并不好，从图2可以看到，随着训练次数的增加，正确率在0.65左右波动，最后正确率在70\%左右，说明模型进入了过拟合阶段。
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=\hsize]{./fig/4.png}
+  \caption{卷积神经网络在测试集的结果}
+  \label{fig1}
+\end{figure}
+它虽然在训练集的表现中越来越好，但是由于训练集样本数量过少，使得训练出的网络不能很好的应用于所有的情况。
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=\hsize]{./fig/3.png}
+  \caption{卷积神经网络在验证集的结果}
+  \label{fig1}
+\end{figure}
+
+\subsubsection{第三轮尝试：MobileNetV2}
+此次尝试采用了 mo平台 提供的利用 MindSpore 搭建 MobileNetV2网络模型的基础上进行参数修改。
+
+由于在深度学习计算中，从头开始训练一个实用的模型通常非常耗时，需要大量计算能力。常用的数据如 OpenImage、ImageNet、VOC、COCO 等公开大型数据集，规模达到几十万甚至超过上百万张。网络和开源社区上通常会提供这些数据集上预训练好的模型。大部分细分领域任务在训练网络模型时，如果不使用预训练模型而从头开始训练网络，不仅耗时，且模型容易陷入局部极小值和过拟合。因此大部分任务都会选择预训练模型，在其上做微调。那么我们的工作也是在原有的网络结构上进行微调得到的。
+
+\paragraph{网络简介}
+\paragraph{MobileNet}
+在现实场景下，诸如移动设备、嵌入式设备、自动驾驶等等，计算能力会受到限制，MobileNet由此提出。相较于传统网络，它有两个特点
+\begin{itemize}
+  \item 使用深度可分离卷积(depthwise separable convolutions)替代传统卷积。
+  \item 引入了两个收缩超参数(shrinking hyperparameters)：宽度乘子(width multiplier)和分辨率乘子(resolution multiplier)。
+\end{itemize}
+
+\paragraph{MobileNetV2}
+MobileNetV2 主要引入了两个改动：Linear Bottleneck 和 Inverted Residual Blocks。
+\begin{itemize}
+  \item Inverted Residual Blocks: MobileNetV2 结构基于 inverted residual。其本质是一个残差网络设计，传统 Residual block 是 block 的两端 channel 通道数多，中间少，而 MobileNetV2 设计的 inverted residual 是 block 的两端 channel 通道数少，block 内 channel 多，类似于沙漏和梭子形态的区别。
+  \item Linear Bottlenecks: 感兴趣区域在 ReLU 之后保持非零，近似认为是线性变换。ReLU 能够保持输入信息的完整性，但仅限于输入特征位于输入空间的低维子空间中。对于低纬度空间处理，论文中把 ReLU 近似为线性转换。
+\end{itemize}
+
+MobileNetV2的网络结构如图5所示：
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.85\hsize]{./fig/mo.jpg}
+  \caption{卷积神经网络结构}
+  \label{fig1}
+\end{figure}
+
+其中，网络模块Bottleneck的结构如图6所示，这是一种残差结构的网络，它将通过卷积之后的结果与输入直接相加，从而达到了将高维特征映射到低维空间的作用。
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.7\hsize]{./fig/bo.png}
+  \caption{MobileNetV2网络结构}
+  \label{fig1}
+\end{figure}
+
+在Bottleneck网络的开头有一个Expansion layer，它以将网络的结构进行扩大，这样使得最后卷积出来的结果能与输入相加，达到将低维空间映射到高维空间的效果，它的结构如图7所示：
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=\hsize]{./fig/bo1.png}
+  \caption{MobileNetV2网络结构}
+  \label{fig1}
+\end{figure}
+\paragraph{数据准备}
+将脚本、预训练模型的 Checkpoint 和数据集组织为如下形式：
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=\hsize]{./fig/7.png}
+  \caption{文件组织形式}
+  \label{fig1}
+\end{figure}
+
+\paragraph{参数配置}
+配置后续训练、验证、推理用到的参数。可以调整以下超参以提高模型训练后的验证精度，如下所示：
+\begin{itemize}
+  \item epochs：在训练集上训练的代数；
+  \item lr\_max：学习率，或者动态学习率的最大值；
+  \item decay\_type：学习率下降策略；
+  \item momentum：Momentum 优化器的动量参数，通常为0.9；
+  \item weight\_decay：正则化项的系数。
+\end{itemize}
+\lstinputlisting[style = Python]{./src/7.py}
+
+\paragraph{训练策略}
+一般情况下，模型训练时采用静态学习率，如0.01。随着训练步数的增加，模型逐渐趋于收敛，对权重参数的更新幅度应该逐渐降低，以减小模型训练后期的抖动。所以，模型训练时可以采用动态下降的学习率，常见的学习率下降策略有：
+\begin{itemize}
+  \item polynomial decay/square decay;
+  \item cosine decay;
+  \item exponential decay;
+  \item stage decay.
+\end{itemize}
+这里实现 cosine decay 和 square decay 下降策略。
+% \lstinputlisting[style = Python]{./src/8.py}
+\paragraph{训练策略}
+在模型训练过程中，通过添加检查点（Checkpoint）用于保存模型的参数，以便进行推理及中断后再训练使用。使用场景如下：
+\paragraph{训练后推理场景}
+\begin{itemize}
+  \item 模型训练完毕后保存模型的参数，用于推理或预测操作。
+  \item 训练过程中，通过实时验证精度，把精度最高的模型参数保存下来，用于预测操作。
+\end{itemize}
+\paragraph{再训练场景}
+\begin{itemize}
+  \item 进行长时间训练任务时，保存训练过程中的Checkpoint文件，防止任务异常退出后从初始状态开始训练。
+  \item Fine-tuning（微调）场景，即训练一个模型并保存参数，基于该模型，面向第二个类似任务进行模型训练。
+\end{itemize}
+
+这里加载ImageNet数据上预训练的MobileNetv2进行Fine-tuning，并在训练过程中保存Checkpoint。 训练有两种方式：
+\begin{itemize}
+  \item 冻结网络的Backbone，只训练修改的FC层（Head）。其中，Backbone再全量数据集上做一遍推理，得到Feature Map，将Feature Map作为训练Head的数据集，可以极大节省训练时间。
+  \item 先冻结网络的Backbone，只训练网络Head；再对Backbone+Head做整网做微调。
+\end{itemize}
+\paragraph{参数调整}
+我们对网络的调整主要是以下几个参数：
+\paragraph{"reduction"，部分池化方式}
+
+池化层的目的就是对大量的特征信息进行过滤，去除其中的冗余信息并筛选出最具代表性的特征信息，因此可以把池化层当作是一个滤波器。池化层的作用包括减少网络中参数的数量、压缩数据以及减少网络的过拟合。池化层里面主要包含了两个参数，分别是步长和池化核大小。池化核以滑动窗口的方式对输入的特征图进行处理，经过不同的池化函数的计算，得到相应的关键特征，其中每个池化层中的池化函数是固定的，一般不需要再引入其他参数。池化函数是池化层的核心，池化函数的不同也就对应着不同的池化方法。一个较好的池化方法通常能够在删除大量的无关信息的同时并且尽可能多的保留关键信息，进而在很大程度上提升整个卷积神经网络的性能。
+
+池化方法中最常见的方法是最大池化和平均池化。最大池化只保留池化框中的最大值，因而最大池化可以有效提取出特征图中最具代表性的信息。平均池化则计算出池化框中所有值的均值，因而可以平均获取特征图中的所有信息，进而不致丢失过多关键信息。这两种方法由于计算简单且效果较好因而被广泛利用在了各种结构的卷积神经网络中，但这两种方法的缺点也是不可忽视的。最大池化由于完全删除了最大值以外的其他值，这往往导致保留了特征图中的前景信息而忽略了所有的背景信息；而平均池化由于取得了所有值之和的均值，虽然对特征图中的背景信息有所保留，但是无法将特征图中的前景信息和背景信息有效地区分开。
+
+基于对两种池化方法（ max 和 mean）的考虑，在该网络中我们选择了最大池化方法，那么在采取了最大池化之后，整个网络的准确率有了很大的提高，从开始的 60\% 一下子上升到 80\%。
+
+
+\paragraph{“batch\_size”，批尺寸}
+Batch 决定了梯度下降的方向。如果数据集比较小，完全可以采用全数据集(Full Batch Learning)的形式，这样做至少有 2 个好处：其一，由全数据集确定的方向能够更好地代表样本总体，从而更准确地朝向极值所在的方向。其二，由于不同权重的梯度值差别巨大，因此选取一个全局的学习率很困难。 Full Batch Learning 可以使用Rprop （弹性反向传播）只基于梯度符号并且针对性单独更新各权值。对于更大的数据集，以上 2 个好处又变成了 2 个坏处：其一，随着数据集的海量增长和内存限制，一次性载入所有的数据进来变得越来越不可行。其二，以 Rprop 的方式迭代，会由于各个 Batch 之间的采样差异性，各次梯度修正值相互抵消，无法修正。
+
+在合理范围内，增大 Batch\_Size 可以提高内存利用率。跑完一次 epoch（全数据集）所需的迭代次数减少，对于相同数据量的处理速度进一步加快。在一定范围内，一般来说 Batch\_Size 越大，其确定的下降方向越准，引起训练震荡越小。但 Batch\_Size 过大，可能使得内存容量不足而训练失败，同时跑完一次 epoch（全数据集）所需的迭代次数减少，要想达到相同的精度，其所花费的时间大大增加了，从而对参数的修正也就显得更加缓慢。
+
+我们根据尝试，选择了最佳的 batch\_size = 10, 使得训练性能达到最佳。
+
+\paragraph{“lr\_rate”，最大学习率}
+学习率(Learning rate)作为监督学习以及深度学习中重要的超参，其决定着目标函数能否收敛到局部最小值以及何时收敛到最小值。合适的学习率能够使目标函数在合适的时间内收敛到局部最小值。当学习率设置的过小时，收敛过程将变得十分缓慢。而当学习率设置的过大时，梯度可能会在最小值附近来回震荡，甚至可能无法收敛。
+
+同时，学习率和batchsize的紧密相连，通常当我们增加batchsize为原来的N倍时，要保证经过同样的样本后更新的权重相等，按照线性缩放规则，学习率应该增加为原来的N倍。但是如果要保证权重的方差不变，则学习率应该增加为原来的sqrt(N)倍。
+
+那么经过大量尝试，我们将学习率最终确定为了 lr\_max = 0.015 以达到相对来说的最优值。
+
+\paragraph{训练结果}
+将参数调整为合适值进行训练，训练35轮，最终得到准确率为 93.97\%，损失曲线如下：
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=\hsize]{./fig/8.png}
+  \caption{MobileNetV2训练结果}
+  \label{fig1}
+\end{figure}
+\paragraph{预测结果}
+在所给的验证集中，大多数种类垃圾可以全部识别正确，个别垃圾种类会识别错误一张，预测的结果如下图所示：
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=\hsize]{./fig/10.png}
+  \caption{预测帽子结果}
+  \label{fig1}
+\end{figure}
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=\hsize]{./fig/9.png}
+  \caption{预测报纸结果}
+  \label{fig1}
+\end{figure}
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=\hsize]{./fig/11.png}
+  \caption{预测塑料瓶结果}
+  \label{fig1}
+\end{figure}
+
+那么最后在MO平台的非公开数据集中的测试结果如下，可以看到，虽然在自己的训练集和验证集中，我们的神经网络已经能达到很好的效果（93.85分）。
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=\hsize]{./fig/13.png}
+  \caption{在MO平台非公开数据集的测试结果}
+  \label{fig1}
+\end{figure}
+
+\subsubsection{第四轮尝试：Swim-Transformer}
+我们后续还引入了 Swim- Transformer网络，Swim-Transformer是一种Transformer网络。传统的Transformer都是基于全局来计算注意力的，因此计算复杂度十分高。而Swin Transformer则将注意力的计算限制在每个窗口内，进而减少了计算量。swim- transformer的网络结构如下所示:
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=\hsize]{./fig/sw.png}
+  \caption{Swim-Transformer网络结构}
+  \label{fig1}
+\end{figure}
+
+那么在经过了80次的训练，网络在验证集与训练集中都达到了90\%的准确率，我们在网络中找了一张图片，经网络进行验证，得到识别结果为Hats，概率为0.971。但是由于Pytorch版本的差异（Swim-T网络要求Pytorch$>$1.70，而MO平台上的Pytorch$=$1.40） 在将模型进行迁移的时候遇到了比较大的困难。
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=\hsize]{./fig/hat.png}
+  \caption{Hat 识别结果}
+  \label{fig1}
+\end{figure}
+\section{比较分析\&结论}
+在此次实验中我们实验的网络主要是CNN和MobileNet。
+
+首先，我们之所以选择CNN是因为卷积网络的精髓就是适合处理结构化数据，而该数据在跨区域上依然有关联，常被用于图像分析。它具有参数共享机制的优点，在卷积层中每个神经元连接数据窗的权重是固定的，每个神经元只关注一个特性。神经元就是图像处理中的滤波器，比如边缘检测专用的Sobel 滤波器，即卷积层的每个滤波器都会有自己所关注一个图像特征，比如垂直边缘，水平边缘，颜色，纹理等等，这些所有神经元加起来就好比就是整张图像的特征提取器集合。另外，CNN也无需手动选取特征，训练好权重，即得输入特征（自动的），分类效果好一般比较好。但是，CNN的缺点就是需要调参，需要大样本量，训练最好要GPU，而在本次实验中，我们认为我们自己搭建的CNN的准确率不太理想的原因是因为网络模型还不是最优，并且样本数量不足。
+
+而在MobileNet网络中，虽然最后准确率可以稳定在90\%以上，并且预测效果也算比较理想，在所给的验证集中，大多数种类垃圾可以全部识别正确，个别垃圾种类会识别错误一张。在引入了残差网络结构之后，通过将卷积之前的图像与卷积之后的图像相叠加加，保留了图像的特征，使得网络的识别准确率大大增加了。
+
+从全连接网络，卷积神经网络到MobileNetV2再到Swim-Transformer，我们模型的准确率不断提高，这种提高与网络的结构密切相关。从全连接网络到卷积神经网络，我们看到了卷积层对特征提取的重要作用，从CNN到MobileNetV2，我们见识到了残差网络对于保留特征的作用，也意识到了卷积神经网络的局限性。在最后尝试的Swim-Transformer中，我们也体会到了注意力机制的威力。
+\section{研究感想\&组员分工}
+\subsection{研究感想}
+\paragraph{张嘉浩}在搭建神经网络的过程中，我从结构上对神经网络有了新的理解。搭建一个网络与学习一个网络有很大的不同，需要注意的地方也更多，比如网络的大小和深度等等。那么在调整参数的过程中，我也意识到调参并不是盲目的，需要结合各个参数的意义和网络的输出结果进行针对性的调整。在搜集资料的过程中，我们小组也通过前人的文章对人工智能与机器学习这个领域有了更加深入的了解和全新的认识，收获颇丰。
+
+\paragraph{代洋飞}垃圾分类神经网络与MO平台的四个小实验有很多不同，最重要的一点就是网络的结构更多，层数更深，这也使得模型的调参更加困难。通过教程提到的Fine-tune微调和设置checkpoint，我们的调参顺利了很多。
+
+\paragraph{朱博医}通过本次大作业，我切身体验了搭建一个神经网络的全过程。从最初的梯度下降算法，到采用pytorch框架建立神经网络结构；从最基础的全连接层网络，到比较复杂的卷积神经网络，再到MobileNetV2，我切身体验到了对不同的分类任务选择不同的神经网络算法的重要性，也目睹了准确率的逐步上升。相信通过此次学习，将来我将会更加熟练得使用神经网络。
+\subsection{成员分工}
+\begin{itemize}
+  \item 张嘉浩：搭建神经网络，模型调参，报告撰写
+  \item 代洋飞：搭建神经网络，模型调参，报告撰写
+  \item 朱博医：数据集读取，模型调参，PPT制作
+\end{itemize}
+\balance
+\begin{thebibliography}{0}
+
+\bibitem{lv2005}
+吕思敏. 以史为鉴, 开启垃圾分类新时代, \emph{城乡建设},2020(3): 30-32.
+\bibitem{cheng2005b}
+Lowe DG, Distinctive image features from scale-invariant keypoints,
+  in \emph{International Journal of Computer Vision}, 2004, 60(2): 91-110.
+\bibitem{cheng2005b}
+Harri C, Stephens M, A combined corner and edge detector
+  in \emph{Proceedings of the 4th Alvey Vision Conference}, Manchester, UK. 1988. 207–217.
+\bibitem{cheng2005b}
+Zhang XK, Wang Y, Gou MR, et al, Efficient temporal sequence comparison and classification using gram matrix embeddings on a riemannian manifold
+  in \emph{Proceedings of 2016 IEEE Conference on Computer Vision and Pattern Recognition}, Las Vegas, NV, USA. 2016. 4498–4507.
+\bibitem{lv2005}
+Ozkaya U, Seyfi L. Fine-tuning models comparisons on garbage classification for recyclability, \emph{arXiv: 1908.04393, 2019.}
+\bibitem{lv2005}
+Mittal G, Yagnik KB, Garg M, et al.  SpotGarbage: Smartphone app to detect garbage using deep learning, \emph{Proceedings of 2016 ACM International Joint Conference}, Heidelberg, Germany. 2016. 940–945.
+\bibitem{lv2005}
+Kingma DP, Ba J. Adam. A method for stochastic optimization, \emph{arXiv: 1412.6980, 2017}
+\bibitem{lv2005}
+Krizhevsky A, Sutskever I, Hinton GE. ImageNet classification with deep convolutional neural networks, \emph{Advances in Neural Information Processing Systems}, Lake Tahoe, NV, USA. 2012. 1106–1114.
+\bibitem{lv2005}
+Harri C, Stephens M, A combined corner and edge detector, \emph{Proceedings of the 4th Alvey Vision Conference}, Manchester, UK. 1988. 207–217.
+\bibitem{lv2005}
+Vapnik V. Statistical Learning Theory, \emph{New York: Wiley},1998. 401–492.
+\bibitem{lv2005}
+吴健, 陈豪, 方武. 基于计算机视觉的废物垃圾分析与识别研究, \emph{信息技术与信息化}, 2016(10): 81-83
+\bibitem{lv2005}
+向伟, 史晋芳, 刘桂华, 等.改进CaffeNet模型在水面垃圾识别中的应用, \emph{传感器与微系统}, 2019, 38(8): 150-152, 156.
+\bibitem{lv2005}
+Kingma DP, Ba J. Adam, A method for stochastic optimization, \emph{arXiv: 1412.6980, 2017.}
+
+\end{thebibliography}
+
+\end{document}

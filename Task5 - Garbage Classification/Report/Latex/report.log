@@ -1,0 +1,706 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2021.12.19)  24 DEC 2021 16:41
+entering extended mode
+**C:/Users/David/Desktop/Report/Latex/report.tex
+(C:/Users/David/Desktop/Report/Latex/report.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+(C:\Users\David\Desktop\Report\Latex\cccconf.cls
+Document Class: cccconf 2010/02/10
+(C:\CTEX\MiKTeX\tex\latex\base\article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(C:\CTEX\MiKTeX\tex\latex\base\size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(C:\CTEX\MiKTeX\tex\latex\preprint\balance.sty
+Package: balance 1999/02/23 4.3 (PWD)
+\oldvsize=\dimen103
+)
+(C:\CTEX\MiKTeX\tex\latex\psnfss\times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(C:\CTEX\CTeX\tex\latex\cct\cctbase.sty
+Package: cctbase 2006/05/17
+ (C:\CTEX\CTeX\tex\latex\cct\CCT.sty
+0.61803 [2009/11/20] (C:\CTEX\CTeX\tex\latex\cct\cchead.sty
+\!ZihaoNo=\count87
+\ccwd=\dimen104
+\ccht=\dimen105
+\ccdp=\dimen106
+\!ccbox=\box26
+\!ccbdskip=\skip43
+)
+Package: CCT 2009/11/20 0.61803
+\@CCTcnta=\count88
+\@CCTcntb=\count89
+\@CCTlastkern=\count90
+\@CCTglue=\skip44
+\@CCTtoks=\toks14
+
+(C:\CTEX\CTeX\tex\latex\cct\CCT.cfg) (C:\CTEX\CTeX\tex\latex\cct\GBKkern.cfg)
+(C:\CTEX\CTeX\tex\latex\CJK\GB\c19song.fd) (\ziti{A}->gbksong)
+\@CCTskip=\skip45
+))
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(C:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(C:\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen107
+\Gin@req@width=\dimen108
+)
+(C:\CTEX\MiKTeX\tex\latex\geometry\geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(C:\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count92
+\Gm@cntv=\count93
+\c@Gm@tempcnt=\count94
+\Gm@bindingoffset=\dimen109
+\Gm@wd@mp=\dimen110
+\Gm@odd@mp=\dimen111
+\Gm@even@mp=\dimen112
+\Gm@layoutwidth=\dimen113
+\Gm@layoutheight=\dimen114
+\Gm@layouthoffset=\dimen115
+\Gm@layoutvoffset=\dimen116
+\Gm@dimlist=\toks16
+
+(C:\CTEX\MiKTeX\tex\latex\geometry\geometry.cfg))
+(C:\CTEX\MiKTeX\tex\latex\tools\indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+\titleb@x=\box27
+\c@affno=\count95
+\@afflist=\toks17
+\@abstract=\box28
+)
+(C:\CTEX\MiKTeX\tex\latex\natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip46
+\bibsep=\skip47
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count96
+)
+(C:\CTEX\MiKTeX\tex\latex\oberdiek\epstopdf.sty
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+(C:\CTEX\MiKTeX\tex\latex\oberdiek\epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(C:\CTEX\MiKTeX\tex\latex\oberdiek\grfext.sty
+Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+))
+(C:\CTEX\MiKTeX\tex\latex\oberdiek\kvoptions.sty
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\kvsetkeys.sty
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(C:\CTEX\MiKTeX\tex\generic\oberdiek\pdftexcmds.sty
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+))
+(C:\CTEX\CTeX\tex\latex\ccmap\ccmap.sty
+Package: ccmap 2006/11/18
+\CCT@hooka@@=\toks18
+)
+(C:\CTEX\MiKTeX\tex\latex\tools\multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count97
+\mult@box=\box29
+\multicol@leftmargin=\dimen117
+\c@unbalance=\count98
+\c@collectmore=\count99
+\doublecol@number=\count100
+\multicoltolerance=\count101
+\multicolpretolerance=\count102
+\full@width=\dimen118
+\page@free=\dimen119
+\premulticols=\dimen120
+\postmulticols=\dimen121
+\multicolsep=\skip48
+\multicolbaselineskip=\skip49
+\partial@page=\box30
+\last@line=\box31
+\mult@rightbox=\box32
+\mult@grightbox=\box33
+\mult@gfirstbox=\box34
+\mult@firstbox=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\c@columnbadness=\count103
+\c@finalcolumnbadness=\count104
+\last@try=\dimen122
+\multicolovershoot=\dimen123
+\multicolundershoot=\dimen124
+\mult@nat@firstbox=\box53
+\colbreak@box=\box54
+\multicol@sort@counter=\count105
+)
+(C:\CTEX\MiKTeX\tex\latex\listings\listings.sty
+\lst@mode=\count106
+\lst@gtempboxa=\box55
+\lst@token=\toks19
+\lst@length=\count107
+\lst@currlwidth=\dimen125
+\lst@column=\count108
+\lst@pos=\count109
+\lst@lostspace=\dimen126
+\lst@width=\dimen127
+\lst@newlines=\count110
+\lst@lineno=\count111
+\lst@maxwidth=\dimen128
+
+(C:\CTEX\MiKTeX\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count112
+\lst@skipnumbers=\count113
+\lst@framebox=\box56
+)
+(C:\CTEX\MiKTeX\tex\latex\listings\listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(C:\CTEX\MiKTeX\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(C:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(C:\CTEX\MiKTeX\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(C:\Users\David\Desktop\Report\Latex\report.aux
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+LaTeX Warning: Label `fig1' multiply defined.
+
+
+Package natbib Warning: Citation `cheng2005b' multiply defined.
+
+
+Package natbib Warning: Citation `cheng2005b' multiply defined.
+
+
+Package natbib Warning: Citation `lv2005' multiply defined.
+
+
+Package natbib Warning: Citation `lv2005' multiply defined.
+
+
+Package natbib Warning: Citation `lv2005' multiply defined.
+
+
+Package natbib Warning: Citation `lv2005' multiply defined.
+
+
+Package natbib Warning: Citation `lv2005' multiply defined.
+
+
+Package natbib Warning: Citation `lv2005' multiply defined.
+
+
+Package natbib Warning: Citation `lv2005' multiply defined.
+
+
+Package natbib Warning: Citation `lv2005' multiply defined.
+
+
+Package natbib Warning: Citation `lv2005' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 44.
+ (C:\CTEX\MiKTeX\tex\latex\psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)<<ot1.cmap>>
+(C:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count114
+\scratchdimen=\dimen129
+\scratchbox=\box57
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen130
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
+\everyMPtoPDFconversion=\toks21
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(48.36958pt, 500.7687pt, 48.36958pt)
+* v-part:(T,H,B)=(56.9055pt, 725.54538pt, 62.59596pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=500.7687pt
+* \textheight=725.54538pt
+* \oddsidemargin=-23.9004pt
+* \evensidemargin=-23.9004pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=19.91684pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@lstlisting=\count120
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
+(C:\CTEX\CTeX\tex\latex\CJK\GB\c19hei.fd) (\ziti{B}->gbkhei)<<c1963.cmap>>
+Loading punctuation table gbkhei.tbl<<c1925.cmap>><<c1961.cmap>><<c1956.cmap>><
+<c1965.cmap>><<c1955.cmap>><<c1944.cmap>><<c1940.cmap>><<c1941.cmap>>
+Loading punctuation table gbksong.tbl<<c1926.cmap>><<c1964.cmap>><<c1938.cmap>>
+<<c1959.cmap>><<c1943.cmap>><<c1952.cmap>><<c1954.cmap>><<c1946.cmap>><<c1942.c
+map>><<c1948.cmap>><<c1962.cmap>><<c1960.cmap>><<c1958.cmap>><<c1949.cmap>><<c1
+945.cmap>><<c1957.cmap>><<c1951.cmap>><<c1947.cmap>><<c1939.cmap>><<c1937.cmap>
+><<c1950.cmap>><<c1936.cmap>>
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
+ (C:\CTEX\CTeX\tex\latex\CJK\GB\c19fs.fd)
+(\ziti{D}->gbkfs)<<oml.cmap>><<oms.cmap>>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 60.
+<<omx.cmap>>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 60.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 60.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <16> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 76.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 78.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
+<<c1953.cmap>><<c1972.cmap>>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
+
+
+]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 102.
+
+
+(C:\CTEX\MiKTeX\tex\latex\psnfss\ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+(C:\CTEX\CTeX\tex\latex\CJK\GB\c19kai.fd) (\ziti{C}->gbkkai)
+(C:\Users\David\Desktop\Report\Latex\src\1.py)
+Overfull \hbox (24.57407pt too wide) in paragraph at lines 1--102
+[][][][][][][][][][][]  
+ []
+
+(C:\Users\David\Desktop\Report\Latex\src\2.py)
+(C:\Users\David\Desktop\Report\Latex\src\3.py)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 115.
+
+<./fig/Cov.png, id=105, 1064.778pt x 385.44pt>
+File: ./fig/Cov.png Graphic file (type png)
+ <use ./fig/Cov.png>
+Package pdftex.def Info: ./fig/Cov.png used on input line 128.
+(pdftex.def)             Requested size: 240.42593pt x 87.03197pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+[]\gbksong58-10.5 ∑ \gbksong50-10.5 Ç \gbksong65-10.5 g \gbksong45-10.5 C \gbks
+ong39-10.5 á \gbksong45-10.5 Ô \gbksong49-10.5 
+ \gbksong61-10.5 ò \gbksong42-10.5 á \gbksong58-10.5   \gbksong38-10.5   \gbkso
+ng40-10.5  \gbksong46-10.5 Ú \gbksong44-10.5 » \gbksong55-10.5   \gbksong46-10
+.5 ≤ \gbksong58-10.5  \gbksong49-10.5 ‰
+ []
+
+(C:\Users\David\Desktop\Report\Latex\src\4.py)
+(C:\Users\David\Desktop\Report\Latex\src\5.py [2 <C:/Users/David/Desktop/Report
+/Latex/fig/Cov.png>])
+Overfull \hbox (34.57407pt too wide) in paragraph at lines 12--141
+[][][][][][][][][][][]  
+ []
+
+(C:\Users\David\Desktop\Report\Latex\src\6.py)
+<./fig/2.png, id=119, 605.26125pt x 466.74374pt>
+File: ./fig/2.png Graphic file (type png)
+ <use ./fig/2.png>
+Package pdftex.def Info: ./fig/2.png used on input line 151.
+(pdftex.def)             Requested size: 240.42593pt x 185.40512pt.
+
+<./fig/4.png, id=120, 594.22pt x 460.72125pt>
+File: ./fig/4.png Graphic file (type png)
+ <use ./fig/4.png>
+Package pdftex.def Info: ./fig/4.png used on input line 158.
+(pdftex.def)             Requested size: 240.42593pt x 186.41533pt.
+
+<./fig/3.png, id=121, 580.1675pt x 466.74374pt>
+File: ./fig/3.png Graphic file (type png)
+ <use ./fig/3.png>
+Package pdftex.def Info: ./fig/3.png used on input line 165.
+(pdftex.def)             Requested size: 240.42593pt x 193.42441pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+ \OT1/ptm/b/n/10 Mo-bileNetV2[] \OT1/ptm/m/n/10 Mo-bileNetV2 \gbksong64-10.5 Ã 
+\gbksong61-10.5 á ⁄ \gbksong54-10.5 \ \gbksong49-10.5 
+ \gbksong48-10.5 ¸ \gbksong42-10.5 á U
+ []
+
+[3 <C:/Users/David/Desktop/Report/Latex/fig/2.png> <C:/Users/David/Desktop/Repo
+rt/Latex/fig/4.png> <C:/Users/David/Desktop/Report/Latex/fig/3.png>]
+<./fig/mo.jpg, id=131, 722.7pt x 532.99126pt>
+File: ./fig/mo.jpg Graphic file (type jpg)
+ <use ./fig/mo.jpg>
+Package pdftex.def Info: ./fig/mo.jpg used on input line 193.
+(pdftex.def)             Requested size: 204.36351pt x 150.71669pt.
+
+<./fig/bo.png, id=132, 340.27126pt x 520.94624pt>
+File: ./fig/bo.png Graphic file (type png)
+ <use ./fig/bo.png>
+Package pdftex.def Info: ./fig/bo.png used on input line 201.
+(pdftex.def)             Requested size: 168.29741pt x 257.65854pt.
+
+<./fig/bo1.png, id=133, 696.6025pt x 170.6375pt>
+File: ./fig/bo1.png Graphic file (type png)
+ <use ./fig/bo1.png>
+Package pdftex.def Info: ./fig/bo1.png used on input line 209.
+(pdftex.def)             Requested size: 240.42593pt x 58.89342pt.
+
+<./fig/7.png, id=134, 1227.58624pt x 707.64375pt>
+File: ./fig/7.png Graphic file (type png)
+ <use ./fig/7.png>
+Package pdftex.def Info: ./fig/7.png used on input line 217.
+(pdftex.def)             Requested size: 240.42593pt x 138.58925pt.
+
+(C:\Users\David\Desktop\Report\Latex\src\7.py) [4 <C:/Users/David/Desktop/Repor
+t/Latex/fig/mo.jpg> <C:/Users/David/Desktop/Report/Latex/fig/bo.png> <C:/Users/
+David/Desktop/Report/Latex/fig/bo1.png> <C:/Users/David/Desktop/Report/Latex/fi
+g/7.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+[]\gbksong46-10.5 ? \gbksong60-10.5 1 \gbksong38-10.5  \gbksong55-10.5 û \gbks
+ong45-10.5 m \gbksong60-10.5 ‘ \gbksong48-10.5 ˆ \gbksong54-10.5 ? \gbksong58-1
+0.5 ÷ \gbksong55-10.5 û \gbksong26-10.5 ß| \gbksong37-10.5  \gbksong39-10.5  
+\gbksong60-10.5 ‘ \gbksong48-10.5 ˆ \gbksong43-10.5 L \gbksong38-10.5 ß \gbkson
+g64-10.5 •
+ []
+
+[5] <./fig/8.png, id=145, 351.56343pt x 248.42813pt>
+File: ./fig/8.png Graphic file (type png)
+ <use ./fig/8.png>
+Package pdftex.def Info: ./fig/8.png used on input line 290.
+(pdftex.def)             Requested size: 240.42593pt x 169.89172pt.
+
+<./fig/10.png, id=146, 566.115pt x 97.11281pt>
+File: ./fig/10.png Graphic file (type png)
+ <use ./fig/10.png>
+Package pdftex.def Info: ./fig/10.png used on input line 298.
+(pdftex.def)             Requested size: 240.42593pt x 41.24348pt.
+
+<./fig/9.png, id=147, 559.33969pt x 101.62968pt>
+File: ./fig/9.png Graphic file (type png)
+ <use ./fig/9.png>
+Package pdftex.def Info: ./fig/9.png used on input line 304.
+(pdftex.def)             Requested size: 240.42593pt x 43.68439pt.
+
+<./fig/11.png, id=148, 580.41844pt x 99.37125pt>
+File: ./fig/11.png Graphic file (type png)
+ <use ./fig/11.png>
+Package pdftex.def Info: ./fig/11.png used on input line 310.
+(pdftex.def)             Requested size: 240.42593pt x 41.16248pt.
+
+<./fig/13.png, id=149, 639.13782pt x 173.89969pt>
+File: ./fig/13.png Graphic file (type png)
+ <use ./fig/13.png>
+Package pdftex.def Info: ./fig/13.png used on input line 318.
+(pdftex.def)             Requested size: 240.42593pt x 65.41653pt.
+
+<./fig/sw.png, id=150, 861.2175pt x 269.005pt>
+File: ./fig/sw.png Graphic file (type png)
+ <use ./fig/sw.png>
+Package pdftex.def Info: ./fig/sw.png used on input line 327.
+(pdftex.def)             Requested size: 240.42593pt x 75.09512pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--331
+[]\gbksong58-10.5 ∑ \gbksong50-10.5 Ç \gbksong44-10.5   \gbksong60-10.5 Y \gbks
+ong44-10.5 Ñ \gbksong61-10.5 ⁄ \gbksong54-10.5 \ \gbksong49-10.5 
+\OT1/ptm/m/n/10 Swim- Trans-former\gbksong58-10.5 
+ []
+
+
+Underfull \hbox (badness 6542) in paragraph at lines 324--331
+\gbksong49-10.5 ‰ \gbksong26-10.5 ß| \OT1/ptm/m/n/10 Swim-Transformer\gbksong55
+-10.5 ¥ \gbksong61-10.5 ò \gbksong64-10.5 ´\OT1/ptm/m/n/10 Transformer\gbksong5
+8-10.5  \gbksong49-10.5 ‰ |\gbksong25-10.5 "| \gbksong39-10.5 D
+ []
+
+<./fig/hat.png, id=151, 462.528pt x 346.896pt>
+File: ./fig/hat.png Graphic file (type png)
+ <use ./fig/hat.png>
+Package pdftex.def Info: ./fig/hat.png used on input line 335.
+(pdftex.def)             Requested size: 240.42593pt x 180.32343pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
+[]\gbksong63-10.5 3 \gbksong39-10.5 d g \gbksong55-10.5 ¢ \gbksong61-10.5  \gb
+ksong64-10.5 • \gbksong58-10.5 ∑ \gbksong50-10.5 Ç \gbksong55-10.5 ¢ \gbksong61
+-10.5  \gbksong40-10.5  \gbksong58-10.5  \gbksong49-10.5 ‰ \gbksong64-10.5 Ã
+ \gbksong61-10.5 á
+ []
+
+[6 <C:/Users/David/Desktop/Report/Latex/fig/8.png (PNG copy)> <C:/Users/David/D
+esktop/Report/Latex/fig/10.png (PNG copy)> <C:/Users/David/Desktop/Report/Latex
+/fig/9.png (PNG copy)> <C:/Users/David/Desktop/Report/Latex/fig/11.png (PNG cop
+y)> <C:/Users/David/Desktop/Report/Latex/fig/13.png> <C:/Users/David/Desktop/Re
+port/Latex/fig/sw.png> <C:/Users/David/Desktop/Report/Latex/fig/hat.png>]
+Underfull \hbox (badness 7379) in paragraph at lines 364--365
+[]\gbksong49-9 Ω \gbksong56-9 g \gbksong50-9 Ø\OT1/ptm/m/n/10 . \gbksong61-9 ± 
+\gbksong55-9 § \gbksong58-9 è \gbksong45-9 Å\OT1/ptm/m/n/10 , \gbksong47-9 m \g
+bksong52-9 È \gbksong48-9 - \gbksong44-9 √ \gbksong41-9 © \gbksong48-9 a \gbkso
+ng60-9 # \gbksong55-9 û \gbksong39-9 ì\OT1/ptm/m/n/10 , \gbkkai38-9 ¢ \gbkkai59
+-9 ä \gbkkai45-9 Ô
+ []
+
+<<c1929.cmap>>
+
+Package natbib Warning: There were multiply defined citations.
+
+
+Package balance Warning: You have called \balance in second column
+(balance)                Columns might not be balanced.
+
+[7] (C:\Users\David\Desktop\Report\Latex\report.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 12317 strings out of 495354
+ 185095 string characters out of 3183858
+ 299483 words of memory out of 3000000
+ 8606 multiletter control sequences out of 15000+200000
+ 67918 words of font info for 204 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 42i,7n,45p,1449b,1655s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (\pdffontattr): fonts \gbkhei61-9 and \gbkhei61-10.5 have conf
+licting attributes; I will ignore the attributes assigned to \gbkhei61-9
+
+pdfTeX warning (\pdffontattr): fonts \gbkhei43-9 and \gbkhei43-10.5 have confli
+cting attributes; I will ignore the attributes assigned to \gbkhei43-9
+
+<C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/sim
+kai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/F
+onts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/C
+TEX/CTeX/fonts/truetype/chinese/simsun.ttf>{C:/CTEX/MiKTeX/fonts/enc/dvips/font
+name/8r.enc}<C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDO
+WS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><
+C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simh
+ei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fo
+nts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WI
+NDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetyp
+e/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOW
+S/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C
+:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhe
+i.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/f
+onts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.tt
+f><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/
+chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTe
+X/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun
+.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truety
+pe/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/
+CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/sim
+sun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/tru
+etype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CT
+EX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/
+simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/
+truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:
+/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/true
+type/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTE
+X/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/s
+imsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/t
+ruetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/
+CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chines
+e/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/font
+s/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/s
+imfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WIND
+OWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.t
+tf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts
+/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDO
+WS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><
+C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/CTEX/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/CTEX/MiKTeX/fonts/type1/urw
+/courier/ucrr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/CTEX/M
+iKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/ut
+mri8a.pfb>
+Output written on report.pdf (7 pages, 1602713 bytes).
+PDF statistics:
+ 459 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 228 words of extra memory for PDF output out of 10000 (max. 10000000)
+
